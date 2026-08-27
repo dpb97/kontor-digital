@@ -1,8 +1,8 @@
 ---
-title: "Fabian Falco – Tech Lead, Kontor"
+title: "Fabian Falco, MSc – Tech Lead, Kontor"
 layout: "cv"
 outputs: ["HTML", "download"]
-name: "Fabian Falco"
+name: "Fabian Falco, MSc"
 role: "Tech Lead, Kontor"
 subtitle: "Software Engineer for Machine Communication and IIoT, IMA Schelling Group · Dornbirn, Vorarlberg, Österreich"
 photo: "images/ffa.jpg"
