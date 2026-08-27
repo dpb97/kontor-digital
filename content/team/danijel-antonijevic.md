@@ -1,6 +1,7 @@
 ---
 title: "Danijel Antonijevic, MSc – Co-Founder, Kontor"
 layout: "cv"
+outputs: ["HTML", "download"]
 name: "Danijel Antonijevic, MSc"
 role: "Co-Founder, Kontor"
 subtitle: "Application Development & Digitisation, IMA Schelling Group · Österreich"
@@ -28,6 +29,8 @@ experience:
       - "Full-Stack-Entwicklung im React- und C#/.NET-Umfeld, unter Einsatz von SQL- und NoSQL-Datenbanken sowie Cloud-Komponenten in Microsoft Azure"
       - "Administration und Betrieb von Cloud-Services in Azure, inklusive Verwaltung von Ressourcen, Zugriffen, Pipelines und Deployments"
       - "Evaluation und Begleitung von KI- und Automatisierungsprojekten, von der Ideenphase über die technische Umsetzung bis hin zu Rollout und Onboarding"
+      - "Digitalisierungs- und KI-Projekte zur Optimierung firmeninterner Prozesse"
+      - "Entwicklung sicherer Fernwartungssysteme und innovativer Softwarelösungen"
   - company: "nu Datenautomaten"
     title: "Software Engineer"
     period: "September 2021 – Juni 2022"

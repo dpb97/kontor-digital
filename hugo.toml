@@ -7,6 +7,12 @@ enableRobotsTXT = true
 [markup.goldmark.renderer]
   unsafe = true
 
+[outputFormats.download]
+  mediaType = "text/html"
+  isHTML = true
+  baseName = "index"
+  path = "download"
+
 [params]
   product = "Kontor"
   line = "Digitalisierung, Automatisierung & KI"

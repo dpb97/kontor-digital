@@ -1,0 +1,89 @@
+<main class="max-w-2xl mx-auto px-6 py-20">
+
+  <div class="flex flex-col sm:flex-row sm:items-start gap-8 mb-14">
+    {{ with .Params.photo }}
+    <img src="{{ . | absURL }}" alt="Portrait von {{ $.Params.name }}" class="w-28 h-28 object-cover border border-line shrink-0">
+    {{ end }}
+    <div>
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Team</p>
+      <h1 class="font-serif text-navy text-3xl md:text-4xl mb-2">{{ .Params.name }}</h1>
+      <p class="text-lg text-navy font-serif mb-1">{{ .Params.role }}</p>
+      <p class="text-sm text-ink/50 mb-5">{{ .Params.subtitle }}</p>
+      <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
+        {{ with .Params.email }}<a href="mailto:{{ . }}" class="text-gold hover:underline">{{ . }}</a>{{ end }}
+        {{ with .Params.phone }}<span class="text-ink/60">{{ . }}</span>{{ end }}
+        {{ with .Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" class="text-gold hover:underline">LinkedIn ↗</a>{{ end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="w-10 border-t border-gold mb-10"></div>
+
+  {{ with .Params.summary }}
+  <section class="mb-16">
+    <h2 class="font-serif text-navy text-xl mb-4">Zusammenfassung</h2>
+    <p class="text-ink/70 leading-relaxed">{{ . }}</p>
+  </section>
+  {{ end }}
+
+  <section class="mb-16 grid sm:grid-cols-2 gap-10">
+    {{ with .Params.skills }}
+    <div>
+      <h2 class="font-serif text-navy text-xl mb-4">Kenntnisse</h2>
+      <ul class="text-ink/70 text-sm space-y-1">
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+    {{ with .Params.languages }}
+    <div>
+      <h2 class="font-serif text-navy text-xl mb-4">Sprachen</h2>
+      <ul class="text-ink/70 text-sm space-y-1">
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </section>
+
+  {{ with .Params.experience }}
+  <section class="mb-16">
+    <h2 class="font-serif text-navy text-xl mb-8">Berufserfahrung</h2>
+    <div class="border-t border-line divide-y divide-line">
+      {{ range . }}
+      <div class="py-6">
+        <div class="flex flex-wrap justify-between items-baseline gap-x-4 mb-1">
+          <h3 class="font-serif text-navy text-base">{{ .company }}</h3>
+          <span class="text-xs text-ink/40 whitespace-nowrap">{{ .period }}</span>
+        </div>
+        <p class="text-sm text-gold mb-1">{{ .title }}</p>
+        {{ with .location }}<p class="text-xs text-ink/40 mb-3">{{ . }}</p>{{ end }}
+        {{ with .desc }}<p class="text-sm text-ink/65 leading-relaxed mb-2">{{ . }}</p>{{ end }}
+        {{ with .bullets }}
+        <ul class="text-sm text-ink/65 leading-relaxed list-disc list-outside ml-4 space-y-1">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.education }}
+  <section>
+    <h2 class="font-serif text-navy text-xl mb-8">Ausbildung</h2>
+    <div class="border-t border-line divide-y divide-line">
+      {{ range . }}
+      <div class="py-4 flex flex-wrap justify-between items-baseline gap-x-4">
+        <div>
+          <h3 class="font-serif text-navy text-base">{{ .school }}</h3>
+          <p class="text-sm text-ink/65">{{ .degree }}</p>
+        </div>
+        <span class="text-xs text-ink/40 whitespace-nowrap">{{ .period }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+</main>
