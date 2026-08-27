@@ -92,6 +92,7 @@
             </p>
             {{ end }}
             <p class="text-ink/70 text-sm leading-relaxed">{{ .desc }}</p>
+            {{ with .email }}<a href="mailto:{{ . }}" class="text-xs text-gold hover:underline mt-2 inline-block">{{ . }}</a>{{ end }}
           </div>
         </div>
         {{ end }}
