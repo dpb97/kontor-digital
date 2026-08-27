@@ -1,0 +1,12 @@
+{
+  "name": "kontor-digital-site",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./static/css/style.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "@tailwindcss/typography": "^0.5.20",
+    "tailwindcss": "^4.1.16"
+  }
+}

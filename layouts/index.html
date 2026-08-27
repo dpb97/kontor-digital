@@ -1,0 +1,176 @@
+{{ define "main" }}
+
+{{ partial "nav.html" . }}
+
+<main>
+
+  <section class="pt-24 pb-24 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-5">{{ .Site.Params.kicker }}</p>
+      <h1 class="font-serif text-navy text-4xl md:text-5xl leading-[1.15] mb-6">{{ .Site.Params.tagline }}</h1>
+      <p class="text-ink/70 text-lg leading-relaxed mb-5">{{ .Site.Params.description }}</p>
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-10">{{ .Site.Params.audience }}</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#kontakt" class="border border-navy text-navy px-7 py-3 text-sm tracking-wide hover:bg-navy hover:text-white transition-colors">Analysegespräch vereinbaren</a>
+        <a href="#leistungen" class="px-7 py-3 text-sm tracking-wide text-ink/70 hover:text-navy transition-colors">Leistungen ansehen →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-6 border-y border-line bg-paper">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-line">
+      <div class="md:px-8 py-6 md:py-0 first:pt-0">
+        <h3 class="font-serif text-navy text-lg mb-3">Prozess vor Tool</h3>
+        <p class="text-ink/65 text-sm leading-relaxed">Erst verstehen wir, wie bei Ihnen gearbeitet wird. Dann wählen wir die Digitalisierungs- und KI-Tools, die tatsächlich dazu passen, nicht umgekehrt.</p>
+      </div>
+      <div class="md:px-8 py-6 md:py-0">
+        <h3 class="font-serif text-navy text-lg mb-3">Ende der Medienbrüche</h3>
+        <p class="text-ink/65 text-sm leading-relaxed">Von der Anfrage bis zur Fertigung ohne Bruch zwischen Papier, Excel, Mail und System. Jede Information bleibt auffindbar und nutzbar.</p>
+      </div>
+      <div class="md:px-8 py-6 md:py-0">
+        <h3 class="font-serif text-navy text-lg mb-3">Realistische KI-Roadmap</h3>
+        <p class="text-ink/65 text-sm leading-relaxed">Priorisierte Anwendungsfälle mit belegbarem Nutzen statt Pilotprojekte, die nie im laufenden Betrieb ankommen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="knowhow" class="py-24 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Unser Know-how</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">Digitalisierungserfahrung aus Konzern und Mittelstand</h2>
+      <p class="text-ink/65 leading-relaxed mb-14 max-w-lg mx-auto">Bevor wir beraten, haben wir es selbst gemacht: im Digitalisierungsteam eines 2.000-Mitarbeiter-Konzerns und in der IT- und KI-Verantwortung eines international tätigen Anlagenbauers.</p>
+      <div class="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto text-left">
+        {{ range .Site.Data.team }}
+        <div class="sm:px-8 py-6 sm:py-0 first:pt-0">
+          <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">{{ .context }}</p>
+          <h3 class="font-serif text-navy text-base mb-2">{{ .title }}</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">{{ .desc }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="leistungen" class="py-24 px-6 bg-paper border-y border-line">
+    <div class="max-w-2xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3 text-center">Leistungen</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-16 text-center">Von der Analyse bis zur Umsetzung</h2>
+      <div class="space-y-12">
+        {{ range .Site.Data.leistungen }}
+        <div>
+          <p class="text-xs uppercase tracking-[0.15em] text-gold mb-4">{{ .category }}</p>
+          <div class="border-t border-line divide-y divide-line">
+            {{ range .items }}
+            <div class="py-4 sm:flex sm:gap-8">
+              <h3 class="font-serif text-navy text-base sm:w-48 shrink-0 mb-1 sm:mb-0">{{ .name }}</h3>
+              <p class="text-ink/65 text-sm leading-relaxed">{{ .desc }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="mittelstand" class="py-24 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Für den Mittelstand</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">Passt sich Ihrer Organisation an</h2>
+      <p class="text-ink/65 leading-relaxed mb-12 max-w-lg mx-auto">
+        Ob eigene IT-Abteilung oder Digitalisierung über externe Dienstleister: wir arbeiten mit der Struktur, die Sie heute haben.
+      </p>
+      <div class="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto">
+        <p class="text-sm text-ink/70 leading-relaxed sm:px-6 py-4 sm:py-0">Herstellerunabhängig: wir empfehlen Tools nach Bedarf, nicht nach Provision.</p>
+        <p class="text-sm text-ink/70 leading-relaxed sm:px-6 py-4 sm:py-0">Ressourcenschonend: schlanke Umsetzung, auch mit Ihren bestehenden externen Dienstleistern.</p>
+        <p class="text-sm text-ink/70 leading-relaxed sm:px-6 py-4 sm:py-0">Ergebnisorientiert: jede Maßnahme mit klarem Business Case statt Technologie um ihrer selbst willen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ablauf" class="py-24 px-6 bg-paper border-y border-line">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Ablauf</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">So kommen wir ins Arbeiten</h2>
+      <p class="text-ink/65 leading-relaxed mb-14 max-w-lg mx-auto">
+        Digitalisierung wird nicht verordnet, sondern gemeinsam mit Ihnen erarbeitet, von der ersten Bestandsaufnahme bis zur Umsetzung.
+      </p>
+      <div class="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto">
+        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
+          <span class="font-serif text-gold text-sm block mb-2">01</span>
+          <h3 class="font-serif text-navy text-base mb-1.5">Prozessaufnahme</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">Wir schauen uns Ihre Abläufe direkt in Fertigung und Verwaltung an: wo Informationen entstehen und wo sie abreißen.</p>
+        </div>
+        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
+          <span class="font-serif text-gold text-sm block mb-2">02</span>
+          <h3 class="font-serif text-navy text-base mb-1.5">Roadmap & Priorisierung</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">Sie erhalten eine priorisierte Digitalisierungs- und KI-Roadmap mit klarem Aufwand-Nutzen-Verhältnis.</p>
+        </div>
+        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
+          <span class="font-serif text-gold text-sm block mb-2">03</span>
+          <h3 class="font-serif text-navy text-base mb-1.5">Umsetzung</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">Wir begleiten die Einführung der passenden Tools, gemeinsam mit Ihrem Team und Ihren bestehenden Dienstleistern.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="zusammenarbeit" class="py-24 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Zusammenarbeit</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">So arbeiten wir zusammen</h2>
+      <p class="text-ink/65 leading-relaxed mb-14 max-w-lg mx-auto">
+        Jedes Unternehmen hat unterschiedliche Prozesse und Ressourcen. Deshalb starten wir immer mit einem unverbindlichen Erstgespräch.
+      </p>
+      <div class="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto">
+        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
+          <h3 class="font-serif text-navy text-base mb-1.5">Erstgespräch</h3>
+          <div class="font-serif text-navy text-2xl mb-0.5">Kostenlos</div>
+          <p class="text-xs text-ink/50 mb-3">ca. 30 Minuten</p>
+          <p class="text-sm text-ink/70 leading-relaxed">Wir hören uns Ihre Situation an und geben eine erste Einschätzung.</p>
+        </div>
+        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
+          <h3 class="font-serif text-navy text-base mb-1.5">Prozessanalyse & Roadmap</h3>
+          <div class="font-serif text-navy text-2xl mb-0.5">Festpreis</div>
+          <p class="text-xs text-ink/50 mb-3">nach Umfang</p>
+          <p class="text-sm text-ink/70 leading-relaxed">Ist-Analyse und priorisierte Digitalisierungs- und KI-Roadmap für Ihr Unternehmen.</p>
+        </div>
+        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
+          <h3 class="font-serif text-navy text-base mb-1.5">Umsetzungsbegleitung</h3>
+          <div class="font-serif text-navy text-2xl mb-0.5">Nach Aufwand</div>
+          <p class="text-xs text-ink/50 mb-3">individuell</p>
+          <p class="text-sm text-ink/70 leading-relaxed">Begleitung bei Tool-Auswahl, Integration und Schulung, so lange Sie uns brauchen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-24 px-6 bg-paper border-y border-line">
+    <div class="max-w-2xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3 text-center">Häufige Fragen</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-14 text-center">Bevor Sie fragen</h2>
+      <div class="divide-y divide-line">
+        {{ range .Site.Params.faq }}
+        <div class="py-6 first:pt-0">
+          <h3 class="font-serif text-navy text-base mb-2">{{ .q }}</h3>
+          <p class="text-ink/65 text-sm leading-relaxed">{{ .a }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="py-24 px-6 bg-navy text-white text-center">
+    <div class="max-w-md mx-auto">
+      <h2 class="font-serif text-2xl md:text-3xl mb-4">Bereit für ein Analysegespräch?</h2>
+      <p class="text-white/65 leading-relaxed mb-9">Lernen Sie uns in einem unverbindlichen Erstgespräch kennen, zugeschnitten auf Ihr Unternehmen.</p>
+      <a href="mailto:{{ .Site.Params.contactEmail }}?subject=Analysegespr%C3%A4ch%20-%20Kontor%20Digitalisierung" class="inline-block border border-gold-light text-gold-light px-7 py-3 text-sm tracking-wide hover:bg-gold-light hover:text-navy transition-colors">Analysegespräch anfragen</a>
+      <p class="text-xs text-white/40 mt-6">oder direkt per Mail: <a href="mailto:{{ .Site.Params.contactEmail }}" class="text-gold-light hover:underline">{{ .Site.Params.contactEmail }}</a></p>
+    </div>
+  </section>
+
+</main>
+
+{{ partial "footer.html" . }}
+
+{{ end }}

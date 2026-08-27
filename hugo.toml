@@ -1,0 +1,39 @@
+baseURL = "https://dpb97.github.io/kontor-digital/"
+languageCode = "de-DE"
+defaultContentLanguage = "de"
+title = "Kontor Digitalisierung – KI- und Digitalisierungsberatung für Maschinenbau & Fertigung"
+enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  product = "Kontor"
+  line = "Digitalisierung & KI"
+  contactEmail = "dominik.boeckle@gmail.com"
+  erpUrl = "https://dpb97.github.io/kontor-erp/"
+
+  kicker = "Digitalisierung & KI-Beratung für Maschinenbau & Fertigung"
+  tagline = "Digitalisierung, die bei Ihren Prozessen anfängt. Nicht beim Tool."
+  description = "Wir analysieren Ihre Abläufe in Fertigung und Verwaltung, finden die Medienbrüche zwischen Papier, Excel, Mail und System und schließen sie mit passenden Digitalisierungs- und KI-Tools. Spezialisiert auf mittelständische Maschinenbau- und Fertigungsunternehmen."
+  audience = "Maschinenbau · Fertigung · Anlagenbau · Mittelstand"
+
+  [[params.faq]]
+    q = "Wir haben keine eigene IT-Abteilung, geht das trotzdem?"
+    a = "Ja, gerade dafür sind wir da. Wir arbeiten direkt mit Ihrer Geschäftsführung und Ihren bestehenden externen Dienstleistern, ohne dass Sie zusätzliches IT-Personal aufbauen müssen."
+
+  [[params.faq]]
+    q = "Ersetzt ihr unsere IT oder unsere Dienstleister?"
+    a = "Nein. Wir ergänzen Ihre bestehende IT-Landschaft und stimmen uns mit Ihren Dienstleistern ab, statt Parallelstrukturen aufzubauen."
+
+  [[params.faq]]
+    q = "Ist KI für unsere Betriebsgröße überhaupt relevant?"
+    a = "Relevant ist nicht die Betriebsgröße, sondern der Anwendungsfall. Wir suchen gezielt nach KI-Einsatzfeldern, die sich in einem mittelständischen Fertigungsbetrieb tatsächlich rechnen."
+
+  [[params.faq]]
+    q = "Wie schnell sehen wir erste Ergebnisse?"
+    a = "Nach der Prozessaufnahme erhalten Sie eine priorisierte Roadmap mit konkreten, kurzfristig umsetzbaren Maßnahmen, nicht erst nach einem Jahr Konzeptphase."
+
+  [[params.faq]]
+    q = "Was passiert nach dem Erstgespräch?"
+    a = "Sie entscheiden, ob und in welchem Umfang wir weitermachen. Das Erstgespräch ist unverbindlich und kostenlos."

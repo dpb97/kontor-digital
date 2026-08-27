@@ -1,0 +1,17 @@
+{{ $home := .Site.Home.RelPermalink }}
+<header class="border-b border-line">
+  <div class="max-w-4xl mx-auto px-6 flex items-center justify-between h-20">
+    <a href="{{ $home }}" class="flex items-baseline gap-2 font-serif text-navy tracking-wide">
+      {{ partial "logomark.html" . }}
+      <span class="text-lg">{{ .Site.Params.product }}</span>
+      <span class="hidden sm:inline text-[0.65rem] uppercase tracking-widest text-ink/40 font-sans ml-1">{{ .Site.Params.line }}</span>
+    </a>
+    <nav class="hidden sm:flex items-center gap-8 text-xs uppercase tracking-widest text-ink/70">
+      <a href="{{ $home }}#leistungen" class="hover:text-navy transition-colors">Leistungen</a>
+      <a href="{{ $home }}#knowhow" class="hover:text-navy transition-colors">Know-how</a>
+      <a href="{{ $home }}#ablauf" class="hover:text-navy transition-colors">Ablauf</a>
+      <a href="{{ $home }}#zusammenarbeit" class="hover:text-navy transition-colors">Zusammenarbeit</a>
+      <a href="{{ $home }}#kontakt" class="text-navy border-b border-navy pb-0.5 hover:text-gold hover:border-gold transition-colors">Analysegespräch</a>
+    </nav>
+  </div>
+</header>

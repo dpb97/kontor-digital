@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@source "../layouts";
+@source "../content";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-cream: #faf7f2;
+  --color-paper: #f4f0e8;
+  --color-ink: #24211c;
+  --color-muted: #6b6559;
+  --color-line: #ddd5c4;
+  --color-navy: #003366;
+  --color-navy-dark: #00203d;
+  --color-gold: #a9803f;
+  --color-gold-light: #cda05c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-sans);
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}

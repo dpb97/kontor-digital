@@ -1,0 +1,15 @@
+<footer class="border-t border-line mt-8">
+  <div class="max-w-4xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-ink/60">
+    <div class="flex items-baseline gap-2 font-serif text-navy">
+      {{ partial "logomark.html" . }}
+      <span>{{ .Site.Params.product }}</span>
+      <span class="text-ink/40 font-sans text-xs">— {{ .Site.Params.line }}</span>
+    </div>
+    <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+      <a href="{{ .Site.Params.erpUrl }}" class="hover:text-navy transition-colors">Kontor ERP</a>
+      <a href="{{ "impressum/" | relURL }}" class="hover:text-navy transition-colors">Impressum</a>
+      <a href="{{ "datenschutz/" | relURL }}" class="hover:text-navy transition-colors">Datenschutz</a>
+      <a href="mailto:{{ .Site.Params.contactEmail }}" class="text-gold hover:underline">{{ .Site.Params.contactEmail }}</a>
+    </nav>
+  </div>
+</footer>
