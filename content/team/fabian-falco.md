@@ -25,11 +25,11 @@ experience:
     period: "Juni 2020 – August 2020"
     location: "Vaduz, Liechtenstein"
   - company: "Geser & Partner"
-    title: "Personalverrechner und Buchhalter"
+    title: "Personalverrechner und Buchhalter · Teilzeit"
     period: "September 2018 – Juni 2020"
     location: "Dornbirn, Vorarlberg, Österreich"
   - company: "Geser & Partner"
-    title: "Personalverrechner und Buchhalter"
+    title: "Personalverrechner und Buchhalter · Vollzeit"
     period: "Januar 2016 – September 2018"
     location: "Dornbirn, Vorarlberg, Österreich"
 education:
