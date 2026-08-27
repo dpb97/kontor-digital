@@ -1,7 +1,7 @@
 baseURL = "https://dpb97.github.io/kontor-digital/"
 languageCode = "de-DE"
 defaultContentLanguage = "de"
-title = "Kontor Digitalisierung – KI- und Digitalisierungsberatung für Maschinenbau & Fertigung"
+title = "Kontor Digitalisierung – Digitalisierung, Automatisierung & KI für Maschinenbau & Fertigung"
 enableRobotsTXT = true
 
 [markup.goldmark.renderer]
@@ -9,13 +9,13 @@ enableRobotsTXT = true
 
 [params]
   product = "Kontor"
-  line = "Digitalisierung & KI"
+  line = "Digitalisierung, Automatisierung & KI"
   contactEmail = "dominik.boeckle@gmail.com"
   erpUrl = "https://dpb97.github.io/kontor-erp/"
 
-  kicker = "Digitalisierung & KI-Beratung für Maschinenbau & Fertigung"
+  kicker = "Beratung für Digitalisierung, Automatisierung und KI im Maschinenbau"
   tagline = "Bevor wir über Software sprechen, verstehen wir Ihre Prozesse."
-  description = "Wir nehmen Ihre Abläufe in Fertigung und Verwaltung auf, decken auf, wo Informationen zwischen Papier, Excel, Mail und System verloren gehen, und schließen diese Lücken mit passenden Digitalisierungs- und KI-Tools. Spezialisiert auf mittelständische Maschinenbau- und Fertigungsunternehmen."
+  description = "Wir nehmen Ihre Abläufe in Fertigung und Verwaltung auf, decken auf, wo Informationen zwischen Papier, Excel, Mail und System verloren gehen, und schließen diese Lücken mit passender Digitalisierung, Automatisierung und KI, in dieser Reihenfolge: nicht jede Lücke braucht ein Sprachmodell."
   audience = "Maschinenbau · Fertigung · Anlagenbau · Mittelstand"
 
   [[params.faq]]

@@ -18,18 +18,22 @@
   </section>
 
   <section class="py-24 px-6 border-y border-line bg-paper">
-    <div class="max-w-4xl mx-auto grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-line">
-      <div class="md:px-8 py-6 md:py-0 first:pt-0">
+    <div class="max-w-4xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12">
+      <div>
         <h3 class="font-serif text-navy text-lg mb-3">Erst der Prozess</h3>
-        <p class="text-ink/65 text-sm leading-relaxed">Wir schauen uns an, wie bei Ihnen tatsächlich gearbeitet wird, bevor wir über Software sprechen. Das dauert länger als eine Tool-Demo, spart aber ein Fehlinvestment.</p>
+        <p class="text-ink/65 text-sm leading-relaxed">Wir schauen uns an, wie bei Ihnen tatsächlich gearbeitet wird, bevor wir über Software sprechen.</p>
       </div>
-      <div class="md:px-8 py-6 md:py-0">
-        <h3 class="font-serif text-navy text-lg mb-3">Ende der Medienbrüche</h3>
+      <div>
+        <h3 class="font-serif text-navy text-lg mb-3">Digitalisierung</h3>
         <p class="text-ink/65 text-sm leading-relaxed">Papier, Excel, Mail und System hören auf, getrennte Inseln zu sein. Wie das aussieht, zeigt das Schaubild weiter unten.</p>
       </div>
-      <div class="md:px-8 py-6 md:py-0">
-        <h3 class="font-serif text-navy text-lg mb-3">Realistische KI-Roadmap</h3>
-        <p class="text-ink/65 text-sm leading-relaxed">Wir suchen nach Anwendungsfällen mit belegbarem Nutzen, nicht nach Anlässen für eine Pressemitteilung.</p>
+      <div>
+        <h3 class="font-serif text-navy text-lg mb-3">Automatisierung</h3>
+        <p class="text-ink/65 text-sm leading-relaxed">Regelbasierte, wiederkehrende Aufgaben automatisieren, wo es sich lohnt. Nicht jede davon braucht KI.</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-navy text-lg mb-3">KI</h3>
+        <p class="text-ink/65 text-sm leading-relaxed">Dort eingesetzt, wo sie einen belegbaren Nutzen hat, nicht als Anlass für eine Pressemitteilung.</p>
       </div>
     </div>
   </section>
@@ -56,6 +60,7 @@
         {{ range .Site.Data.team }}
         <div>
           <p class="text-xs uppercase tracking-[0.15em] text-gold mb-2">{{ .context }}</p>
+          {{ if .name }}<p class="font-serif text-navy text-base mb-2">{{ .name }}</p>{{ end }}
           <p class="text-ink/70 text-sm leading-relaxed">{{ .desc }}</p>
         </div>
         {{ end }}
@@ -132,11 +137,14 @@
         </div>
         <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
           <h3 class="font-serif text-navy text-base mb-1.5">Umsetzungsbegleitung</h3>
-          <div class="font-serif text-navy text-2xl mb-0.5">Nach Aufwand</div>
-          <p class="text-xs text-ink/50 mb-3">individuell</p>
-          <p class="text-sm text-ink/70 leading-relaxed">Begleitung bei Tool-Auswahl, Integration und Schulung, so lange Sie uns brauchen.</p>
+          <div class="font-serif text-navy text-2xl mb-0.5">Zwei Modelle</div>
+          <p class="text-xs text-ink/50 mb-3">Aufwand oder Erfolgsanteil</p>
+          <p class="text-sm text-ink/70 leading-relaxed">Begleitung bei Tool-Auswahl, Integration und Automatisierung, so lange Sie uns brauchen.</p>
         </div>
       </div>
+      <p class="text-sm text-ink/60 leading-relaxed max-w-lg mx-auto mt-12">
+        Bei der Umsetzungsbegleitung wählen Sie das Abrechnungsmodell: klassisch nach Aufwand, oder mit reduziertem Stundensatz plus Beteiligung an den nachgewiesenen Einsparungen.
+      </p>
     </div>
   </section>
 

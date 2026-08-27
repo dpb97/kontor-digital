@@ -8,11 +8,15 @@
   items:
     - name: "Digitalisierungs-Roadmap"
       desc: "Priorisierte Maßnahmen mit Aufwand-Nutzen-Einschätzung, abgestimmt auf Ihre Ressourcen."
+    - name: "Automatisierungspotenziale"
+      desc: "Regelbasierte, wiederkehrende Aufgaben in Fertigung und Verwaltung, die sich automatisieren lassen, unabhängig davon, ob KI dabei zum Einsatz kommt."
     - name: "KI-Einsatzfelder"
       desc: "Realistische KI-Anwendungsfälle in Fertigung, Qualität und Verwaltung – keine Technologie ohne Anwendungsfall."
 - category: "Umsetzung"
   items:
     - name: "Tool-Auswahl & Integration"
       desc: "Herstellerunabhängige Auswahl und Anbindung passender Tools statt weiterer Insellösungen."
+    - name: "Automatisierung umsetzen"
+      desc: "Von einfachen Workflow-Verknüpfungen bis zu automatisierten Übergaben zwischen Systemen."
     - name: "Schulung & Change"
       desc: "Einbindung Ihres Teams und Ihrer externen Dienstleister, damit die Tools auch im Alltag genutzt werden."
