@@ -5,6 +5,7 @@ outputs: ["HTML", "download"]
 name: "Fabian Falco"
 role: "Tech Lead, Kontor"
 subtitle: "Software Engineer for Machine Communication and IIoT, IMA Schelling Group · Dornbirn, Vorarlberg, Österreich"
+photo: "images/ffa.jpg"
 email: "fabs.falco@hotmail.com"
 linkedin: "https://www.linkedin.com/in/fabian-falco-907b7b204/"
 skills:
