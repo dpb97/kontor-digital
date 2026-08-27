@@ -14,8 +14,8 @@ enableRobotsTXT = true
   erpUrl = "https://dpb97.github.io/kontor-erp/"
 
   kicker = "Digitalisierung & KI-Beratung für Maschinenbau & Fertigung"
-  tagline = "Digitalisierung, die bei Ihren Prozessen anfängt. Nicht beim Tool."
-  description = "Wir analysieren Ihre Abläufe in Fertigung und Verwaltung, finden die Medienbrüche zwischen Papier, Excel, Mail und System und schließen sie mit passenden Digitalisierungs- und KI-Tools. Spezialisiert auf mittelständische Maschinenbau- und Fertigungsunternehmen."
+  tagline = "Bevor wir über Software sprechen, verstehen wir Ihre Prozesse."
+  description = "Wir nehmen Ihre Abläufe in Fertigung und Verwaltung auf, decken auf, wo Informationen zwischen Papier, Excel, Mail und System verloren gehen, und schließen diese Lücken mit passenden Digitalisierungs- und KI-Tools. Spezialisiert auf mittelständische Maschinenbau- und Fertigungsunternehmen."
   audience = "Maschinenbau · Fertigung · Anlagenbau · Mittelstand"
 
   [[params.faq]]

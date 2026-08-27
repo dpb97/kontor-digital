@@ -1,0 +1,17 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#f4f0e8', 'primaryBorderColor':'#003366', 'primaryTextColor':'#24211c', 'secondaryColor':'#faf7f2', 'tertiaryColor':'#faf7f2', 'lineColor':'#a9803f', 'fontFamily':'Georgia, serif', 'fontSize':'15px', 'clusterBkg':'#faf7f2', 'clusterBorder':'#ddd5c4', 'edgeLabelBackground':'#faf7f2' }}}%%
+flowchart LR
+  subgraph H["Heute"]
+    direction TB
+    H1["Anfrage per Mail"] --> H2["Papierliste in der Fertigung"]
+    H2 -. Medienbruch .-> H3["Excel, manuell gepflegt"]
+    H3 -. Medienbruch .-> H4["Rückfrage per Telefon"]
+    H4 -. Medienbruch .-> H5["Nacherfassung im System"]
+  end
+  subgraph K["Mit Kontor Digitalisierung"]
+    direction TB
+    K1["Anfrage"] --> K2["Ein System"]
+    K2 --> K3["Fertigung"]
+    K3 --> K4["Dokumentation"]
+    K4 --> K5["Auswertung"]
+  end
+  H ~~~ K

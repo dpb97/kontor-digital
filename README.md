@@ -32,3 +32,15 @@ Live-URL: https://dpb97.github.io/kontor-digital/
 
 Impressum/Datenschutz sind eigenständige deutsche Rechtstexte, analog zu
 `kontor-erp`.
+
+## Diagramme
+
+`static/images/diagrams/*.svg` sind als statische SVGs eingebunden, damit
+keine JS-Bibliothek zur Laufzeit nachgeladen werden muss (Datenschutz,
+Performance). Quelle: `diagrams/*.mmd`, erzeugt mit
+[Mermaid](https://mermaid.js.org/) und mit dem Farbschema der Seite
+(`themeVariables`) gerendert, z. B. per `@mermaid-js/mermaid-cli`:
+
+```bash
+npx -y @mermaid-js/mermaid-cli -i diagrams/ablauf.mmd -o static/images/diagrams/ablauf.svg
+```

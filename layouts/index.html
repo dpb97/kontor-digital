@@ -20,38 +20,50 @@
   <section class="py-24 px-6 border-y border-line bg-paper">
     <div class="max-w-4xl mx-auto grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-line">
       <div class="md:px-8 py-6 md:py-0 first:pt-0">
-        <h3 class="font-serif text-navy text-lg mb-3">Prozess vor Tool</h3>
-        <p class="text-ink/65 text-sm leading-relaxed">Erst verstehen wir, wie bei Ihnen gearbeitet wird. Dann wählen wir die Digitalisierungs- und KI-Tools, die tatsächlich dazu passen, nicht umgekehrt.</p>
+        <h3 class="font-serif text-navy text-lg mb-3">Erst der Prozess</h3>
+        <p class="text-ink/65 text-sm leading-relaxed">Wir schauen uns an, wie bei Ihnen tatsächlich gearbeitet wird, bevor wir über Software sprechen. Das dauert länger als eine Tool-Demo, spart aber ein Fehlinvestment.</p>
       </div>
       <div class="md:px-8 py-6 md:py-0">
         <h3 class="font-serif text-navy text-lg mb-3">Ende der Medienbrüche</h3>
-        <p class="text-ink/65 text-sm leading-relaxed">Von der Anfrage bis zur Fertigung ohne Bruch zwischen Papier, Excel, Mail und System. Jede Information bleibt auffindbar und nutzbar.</p>
+        <p class="text-ink/65 text-sm leading-relaxed">Papier, Excel, Mail und System hören auf, getrennte Inseln zu sein. Wie das aussieht, zeigt das Schaubild weiter unten.</p>
       </div>
       <div class="md:px-8 py-6 md:py-0">
         <h3 class="font-serif text-navy text-lg mb-3">Realistische KI-Roadmap</h3>
-        <p class="text-ink/65 text-sm leading-relaxed">Priorisierte Anwendungsfälle mit belegbarem Nutzen statt Pilotprojekte, die nie im laufenden Betrieb ankommen.</p>
+        <p class="text-ink/65 text-sm leading-relaxed">Wir suchen nach Anwendungsfällen mit belegbarem Nutzen, nicht nach Anlässen für eine Pressemitteilung.</p>
       </div>
     </div>
   </section>
 
-  <section id="knowhow" class="py-24 px-6">
-    <div class="max-w-2xl mx-auto text-center">
-      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Unser Know-how</p>
-      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">Digitalisierungserfahrung aus Konzern und Mittelstand</h2>
-      <p class="text-ink/65 leading-relaxed mb-14 max-w-lg mx-auto">Bevor wir beraten, haben wir es selbst gemacht: im Digitalisierungsteam eines 2.000-Mitarbeiter-Konzerns und in der IT- und KI-Verantwortung eines international tätigen Anlagenbauers.</p>
-      <div class="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto text-left">
+  <section id="medienbrueche" class="py-24 px-6">
+    <div class="max-w-2xl mx-auto text-center mb-12">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Der Kern des Problems</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">Wo Informationen heute abreißen</h2>
+      <p class="text-ink/65 leading-relaxed max-w-lg mx-auto">Jeder Medienbruch kostet Zeit und wird irgendwo im Betrieb wieder eingeholt, meist manuell. Vereinfacht sieht das so aus, und so sieht die Alternative aus.</p>
+    </div>
+    <figure class="max-w-xl mx-auto">
+      <div class="border border-line p-6 md:p-8 bg-paper overflow-x-auto">
+        <img src="{{ "images/diagrams/medienbrueche.svg" | relURL }}" alt="Vergleich zweier Auftragsdurchläufe: Heute mit mehreren Medienbrüchen zwischen Mail, Papier, Excel und Telefon, gegenüber einem durchgängigen Ablauf mit Kontor Digitalisierung von der Anfrage bis zur Auswertung" class="mx-auto" style="min-width: 480px;">
+      </div>
+      <figcaption class="text-center text-xs text-ink/40 mt-4 tracking-wide">Vereinfachte Darstellung eines typischen Auftragsdurchlaufs</figcaption>
+    </figure>
+  </section>
+
+  <section id="knowhow" class="py-24 px-6 bg-paper border-y border-line">
+    <div class="max-w-xl mx-auto">
+      <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3 text-center">Unser Know-how</p>
+      <h2 class="font-serif text-navy text-2xl md:text-3xl mb-14 text-center">Aus Konzern und Mittelstand</h2>
+      <div class="space-y-10">
         {{ range .Site.Data.team }}
-        <div class="sm:px-8 py-6 sm:py-0 first:pt-0">
-          <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">{{ .context }}</p>
-          <h3 class="font-serif text-navy text-base mb-2">{{ .title }}</h3>
-          <p class="text-sm text-ink/70 leading-relaxed">{{ .desc }}</p>
+        <div>
+          <p class="text-xs uppercase tracking-[0.15em] text-gold mb-2">{{ .context }}</p>
+          <p class="text-ink/70 text-sm leading-relaxed">{{ .desc }}</p>
         </div>
         {{ end }}
       </div>
     </div>
   </section>
 
-  <section id="leistungen" class="py-24 px-6 bg-paper border-y border-line">
+  <section id="leistungen" class="py-24 px-6">
     <div class="max-w-2xl mx-auto">
       <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3 text-center">Leistungen</p>
       <h2 class="font-serif text-navy text-2xl md:text-3xl mb-16 text-center">Von der Analyse bis zur Umsetzung</h2>
@@ -73,49 +85,32 @@
     </div>
   </section>
 
-  <section id="mittelstand" class="py-24 px-6">
+  <section id="mittelstand" class="py-24 px-6 bg-paper border-y border-line">
     <div class="max-w-2xl mx-auto text-center">
       <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Für den Mittelstand</p>
       <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">Passt sich Ihrer Organisation an</h2>
-      <p class="text-ink/65 leading-relaxed mb-12 max-w-lg mx-auto">
-        Ob eigene IT-Abteilung oder Digitalisierung über externe Dienstleister: wir arbeiten mit der Struktur, die Sie heute haben.
+      <p class="text-ink/65 leading-relaxed max-w-lg mx-auto">
+        Ob Sie eine eigene IT-Abteilung haben oder Digitalisierung heute über externe Dienstleister läuft: Wir arbeiten mit der Struktur, die Sie bereits haben, empfehlen Tools nach Bedarf statt nach Provision und legen jede Maßnahme so aus, dass sie sich mit Ihren vorhandenen Ressourcen auch wirklich umsetzen lässt.
       </p>
-      <div class="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto">
-        <p class="text-sm text-ink/70 leading-relaxed sm:px-6 py-4 sm:py-0">Herstellerunabhängig: wir empfehlen Tools nach Bedarf, nicht nach Provision.</p>
-        <p class="text-sm text-ink/70 leading-relaxed sm:px-6 py-4 sm:py-0">Ressourcenschonend: schlanke Umsetzung, auch mit Ihren bestehenden externen Dienstleistern.</p>
-        <p class="text-sm text-ink/70 leading-relaxed sm:px-6 py-4 sm:py-0">Ergebnisorientiert: jede Maßnahme mit klarem Business Case statt Technologie um ihrer selbst willen.</p>
-      </div>
     </div>
   </section>
 
-  <section id="ablauf" class="py-24 px-6 bg-paper border-y border-line">
-    <div class="max-w-2xl mx-auto text-center">
+  <section id="ablauf" class="py-24 px-6">
+    <div class="max-w-2xl mx-auto text-center mb-12">
       <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Ablauf</p>
       <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">So kommen wir ins Arbeiten</h2>
-      <p class="text-ink/65 leading-relaxed mb-14 max-w-lg mx-auto">
-        Digitalisierung wird nicht verordnet, sondern gemeinsam mit Ihnen erarbeitet, von der ersten Bestandsaufnahme bis zur Umsetzung.
+      <p class="text-ink/65 leading-relaxed max-w-lg mx-auto">
+        Kein einmaliges Projekt mit Abschlussbericht, sondern ein Kreislauf: Nach der ersten Roadmap bleiben wir dran, weil sich Prozesse weiterentwickeln.
       </p>
-      <div class="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-line max-w-xl mx-auto">
-        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
-          <span class="font-serif text-gold text-sm block mb-2">01</span>
-          <h3 class="font-serif text-navy text-base mb-1.5">Prozessaufnahme</h3>
-          <p class="text-sm text-ink/70 leading-relaxed">Wir schauen uns Ihre Abläufe direkt in Fertigung und Verwaltung an: wo Informationen entstehen und wo sie abreißen.</p>
-        </div>
-        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
-          <span class="font-serif text-gold text-sm block mb-2">02</span>
-          <h3 class="font-serif text-navy text-base mb-1.5">Roadmap & Priorisierung</h3>
-          <p class="text-sm text-ink/70 leading-relaxed">Sie erhalten eine priorisierte Digitalisierungs- und KI-Roadmap mit klarem Aufwand-Nutzen-Verhältnis.</p>
-        </div>
-        <div class="sm:px-6 py-6 sm:py-0 text-left sm:text-center">
-          <span class="font-serif text-gold text-sm block mb-2">03</span>
-          <h3 class="font-serif text-navy text-base mb-1.5">Umsetzung</h3>
-          <p class="text-sm text-ink/70 leading-relaxed">Wir begleiten die Einführung der passenden Tools, gemeinsam mit Ihrem Team und Ihren bestehenden Dienstleistern.</p>
-        </div>
-      </div>
     </div>
+    <figure class="max-w-3xl mx-auto">
+      <div class="border border-line p-6 md:p-8 bg-paper overflow-x-auto">
+        <img src="{{ "images/diagrams/ablauf.svg" | relURL }}" alt="Ablauf als Kreislauf: Erstgespräch, Prozessaufnahme, Roadmap und Priorisierung, Umsetzungsbegleitung, mit laufender Weiterentwicklung zurück zur Prozessaufnahme" class="mx-auto" style="min-width: 640px;">
+      </div>
+    </figure>
   </section>
 
-  <section id="zusammenarbeit" class="py-24 px-6">
+  <section id="zusammenarbeit" class="py-24 px-6 bg-paper border-y border-line">
     <div class="max-w-2xl mx-auto text-center">
       <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3">Zusammenarbeit</p>
       <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">So arbeiten wir zusammen</h2>
@@ -145,7 +140,7 @@
     </div>
   </section>
 
-  <section id="faq" class="py-24 px-6 bg-paper border-y border-line">
+  <section id="faq" class="py-24 px-6">
     <div class="max-w-2xl mx-auto">
       <p class="text-xs uppercase tracking-[0.15em] text-gold mb-3 text-center">Häufige Fragen</p>
       <h2 class="font-serif text-navy text-2xl md:text-3xl mb-14 text-center">Bevor Sie fragen</h2>
