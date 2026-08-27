@@ -35,12 +35,10 @@ Impressum/Datenschutz sind eigenständige deutsche Rechtstexte, analog zu
 
 ## Diagramme
 
-`static/images/diagrams/*.svg` sind als statische SVGs eingebunden, damit
-keine JS-Bibliothek zur Laufzeit nachgeladen werden muss (Datenschutz,
-Performance). Quelle: `diagrams/*.mmd`, erzeugt mit
-[Mermaid](https://mermaid.js.org/) und mit dem Farbschema der Seite
-(`themeVariables`) gerendert, z. B. per `@mermaid-js/mermaid-cli`:
-
-```bash
-npx -y @mermaid-js/mermaid-cli -i diagrams/ablauf.mmd -o static/images/diagrams/ablauf.svg
-```
+Die Prozess-Vergleiche (Medienbrüche, Ablauf) sind natives HTML/CSS
+(`<details>` für die aufklappbaren Tool-Beispiele in
+`layouts/index.html`, Daten in `data/medienbrueche.yaml`) statt
+generierter Grafiken. Grund: eingebettete SVG-Diagramme backen die
+Textbreite zum Erzeugungszeitpunkt mit einer bestimmten Schriftart ein,
+beim späteren Anzeigen mit abweichender Schrift lief Text über den
+Rand hinaus.

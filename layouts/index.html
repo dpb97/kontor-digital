@@ -44,12 +44,33 @@
       <h2 class="font-serif text-navy text-2xl md:text-3xl mb-6">Wo Informationen heute abreißen</h2>
       <p class="text-ink/65 leading-relaxed max-w-lg mx-auto">Jeder Medienbruch kostet Zeit und wird irgendwo im Betrieb wieder eingeholt, meist manuell. Vereinfacht sieht das so aus, und so sieht die Alternative aus.</p>
     </div>
-    <figure class="max-w-xl mx-auto">
-      <div class="border border-line p-6 md:p-8 bg-paper overflow-x-auto">
-        <img src="{{ "images/diagrams/medienbrueche.svg" | relURL }}" alt="Vergleich zweier Auftragsdurchläufe: Heute mit mehreren Medienbrüchen zwischen Mail, Papier, Excel und Telefon, gegenüber einem durchgängigen Ablauf mit Kontor Digitalisierung von der Anfrage bis zur Auswertung" class="mx-auto" style="min-width: 480px;">
+    <div class="max-w-2xl mx-auto border border-line bg-paper p-6 md:p-10">
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <div>
+          <p class="text-xs uppercase tracking-[0.15em] text-ink/40 mb-5">Heute</p>
+          <div>
+            {{ range .Site.Data.medienbrueche.heute }}
+            <details class="group border-l-2 border-dashed border-line/80 pl-4 pb-5 last:pb-0">
+              <summary class="cursor-pointer font-serif text-navy text-sm marker:text-ink/30">{{ .name }}</summary>
+              <p class="text-xs text-ink/45 mt-2 leading-relaxed">Tools: {{ .tools }}</p>
+            </details>
+            {{ end }}
+          </div>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.15em] text-gold mb-5">Mit Kontor Digitalisierung</p>
+          <div>
+            {{ range .Site.Data.medienbrueche.kontor }}
+            <details class="group border-l-2 border-gold pl-4 pb-5 last:pb-0">
+              <summary class="cursor-pointer font-serif text-navy text-sm marker:text-gold">{{ .name }}</summary>
+              <p class="text-xs text-ink/50 mt-2 leading-relaxed">Tools: {{ .tools }}</p>
+            </details>
+            {{ end }}
+          </div>
+        </div>
       </div>
-      <figcaption class="text-center text-xs text-ink/40 mt-4 tracking-wide">Vereinfachte Darstellung eines typischen Auftragsdurchlaufs</figcaption>
-    </figure>
+      <p class="text-center text-xs text-ink/40 mt-8 tracking-wide">Zum Aufklappen antippen — Beispiel-Tools je Schritt</p>
+    </div>
   </section>
 
   <section id="knowhow" class="py-24 px-6 bg-paper border-y border-line">
@@ -118,11 +139,18 @@
         Kein einmaliges Projekt mit Abschlussbericht, sondern ein Kreislauf: Nach der ersten Roadmap bleiben wir dran, weil sich Prozesse weiterentwickeln.
       </p>
     </div>
-    <figure class="max-w-3xl mx-auto">
-      <div class="border border-line p-6 md:p-8 bg-paper overflow-x-auto">
-        <img src="{{ "images/diagrams/ablauf.svg" | relURL }}" alt="Ablauf als Kreislauf: Erstgespräch, Prozessaufnahme, Roadmap und Priorisierung, Umsetzungsbegleitung, mit laufender Weiterentwicklung zurück zur Prozessaufnahme" class="mx-auto" style="min-width: 640px;">
+    <div class="max-w-2xl mx-auto">
+      <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-4">
+        <span class="border border-line px-4 py-2 text-sm text-navy font-serif">Erstgespräch</span>
+        <span class="text-gold">→</span>
+        <span class="border border-line px-4 py-2 text-sm text-navy font-serif">Prozessaufnahme</span>
+        <span class="text-gold">→</span>
+        <span class="border border-line px-4 py-2 text-sm text-navy font-serif">Roadmap &amp; Priorisierung</span>
+        <span class="text-gold">→</span>
+        <span class="border border-line px-4 py-2 text-sm text-navy font-serif">Umsetzungsbegleitung</span>
       </div>
-    </figure>
+      <p class="text-center text-xs text-ink/40 mt-6 tracking-wide">↺ Umsetzungsbegleitung führt zurück zur Prozessaufnahme — laufende Weiterentwicklung, kein Einmalprojekt</p>
+    </div>
   </section>
 
   <section id="zusammenarbeit" class="py-24 px-6 bg-paper border-y border-line">
