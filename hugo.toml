@@ -16,7 +16,7 @@ enableRobotsTXT = true
 [params]
   product = "Kontor"
   line = "Digitalisierung, Automatisierung & KI"
-  contactEmail = "danijel.antonijevic@gmail.com"
+  contactEmail = "danijel.antonijevic+kontor@gmail.com"
   erpUrl = "https://dpb97.github.io/kontor-erp/"
 
   kicker = "Beratung für Digitalisierung, Automatisierung und KI im Maschinenbau"

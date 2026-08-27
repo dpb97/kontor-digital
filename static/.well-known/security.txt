@@ -1,4 +1,4 @@
-Contact: mailto:danijel.antonijevic@gmail.com
+Contact: mailto:danijel.antonijevic+kontor@gmail.com
 Expires: 2027-08-26T00:00:00.000Z
 Preferred-Languages: de
 Canonical: https://dpb97.github.io/kontor-digital/.well-known/security.txt
