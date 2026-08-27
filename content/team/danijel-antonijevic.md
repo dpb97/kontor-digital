@@ -3,7 +3,7 @@ title: "Danijel Antonijevic, MSc – Co-Founder, Kontor"
 layout: "cv"
 name: "Danijel Antonijevic, MSc"
 role: "Co-Founder, Kontor"
-subtitle: "Software Engineer for Machine Communication and IIoT, IMA Schelling Group · Österreich"
+subtitle: "Application Development & Digitisation, IMA Schelling Group · Österreich"
 photo: "images/dan.jpg"
 email: "danijel.antonijevic@gmail.com"
 phone: "+43 660 1221915"
@@ -19,7 +19,7 @@ languages:
   - "Serbisch — Muttersprache"
 experience:
   - company: "IMA Schelling Austria"
-    title: "Software Engineer for Machine Communication and IIoT"
+    title: "Application Development & Digitisation"
     period: "Juli 2022 – heute"
     desc: "Gestaltete aktiv die digitale Transformation des Unternehmens mit, indem er Softwarelösungen, Automatisierungen und KI-Projekte von der Idee bis zum Rollout technisch begleitete."
     bullets:
