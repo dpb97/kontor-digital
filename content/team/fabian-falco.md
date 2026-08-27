@@ -20,6 +20,7 @@ experience:
   - company: "Bytero.io"
     title: "Software Engineer"
     period: "Oktober 2022 – Dezember 2023"
+    desc: "Web3, Blockchain und Distributed-Ledger-Technologie."
   - company: "Netcetera"
     title: "Software Engineer Intern"
     period: "Juni 2020 – August 2020"
