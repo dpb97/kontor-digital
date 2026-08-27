@@ -60,7 +60,11 @@
         {{ range .Site.Data.team }}
         <div>
           <p class="text-xs uppercase tracking-[0.15em] text-gold mb-2">{{ .context }}</p>
-          {{ if .name }}<p class="font-serif text-navy text-base mb-2">{{ .name }}</p>{{ end }}
+          {{ if .name }}
+          <p class="font-serif text-navy text-base mb-2">
+            {{ .name }}{{ with .linkedin }} <a href="{{ . }}" target="_blank" rel="noopener" class="font-sans text-xs text-gold hover:underline align-middle">LinkedIn ↗</a>{{ end }}
+          </p>
+          {{ end }}
           <p class="text-ink/70 text-sm leading-relaxed">{{ .desc }}</p>
         </div>
         {{ end }}
