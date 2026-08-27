@@ -28,10 +28,12 @@ experience:
     title: "Personalverrechner und Buchhalter · Teilzeit"
     period: "September 2018 – Juni 2020"
     location: "Dornbirn, Vorarlberg, Österreich"
+    desc: "Berufsbegleitend zum Bachelorstudium Computer Software Engineering."
   - company: "Geser & Partner"
     title: "Personalverrechner und Buchhalter · Vollzeit"
     period: "Januar 2016 – September 2018"
     location: "Dornbirn, Vorarlberg, Österreich"
+    desc: "Direkt nach der kaufmännischen Matura an der HAK Feldkirch, Grundlage für den späteren Wechsel in die Softwareentwicklung."
 education:
   - school: "FHV – Vorarlberg University of Applied Sciences"
     degree: "Master of Science, Computer Science"
