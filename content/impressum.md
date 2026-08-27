@@ -21,7 +21,6 @@ Dominik Böckle
 **Kontakt**
 
 - E-Mail: {{% param "contactEmail" %}}
-- E-Mail (Co-Founder): danijel.antonijevic@gmail.com
 - Telefon: [Platzhalter – wird ergänzt]
 
 **Umsatzsteuer-Identifikationsnummer**
